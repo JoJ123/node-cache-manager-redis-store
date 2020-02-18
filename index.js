@@ -1,7 +1,7 @@
 import Redis from 'redis';
 
-const redisStore = (...args) => {
-  const redisCache = Redis.createClient(...args);
+const redisStore = (redisInstance) => {
+  const redisCache = redisInstance;
   const storeArgs = redisCache.options;
 
   return {
@@ -208,7 +208,7 @@ function handleResponse(cb, opts = {}) {
 }
 
 const methods = {
-  create: (...args) => redisStore(...args),
+  create: (redisInstance) => redisStore(redisInstance),
 };
 
 export default methods;
