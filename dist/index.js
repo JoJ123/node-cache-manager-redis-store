@@ -251,7 +251,7 @@ function handleResponse(cb) {
 }
 
 var methods = {
-  create: function create() {
+  create: function create(redisInstance) {
     return redisStore(redisInstance);
   }
 };
