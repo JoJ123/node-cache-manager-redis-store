@@ -2,7 +2,7 @@
   "name": "cache-manager-redis-store-with-ioredis-instance",
   "author": "Johannes Jaeger <johannesjaegeroffice@gmail.com>",
   "description": "Redis store for node-cache-manager",
-  "version": "1.0.0",
+  "version": "2.1.0",
   "license": "MIT",
   "main": "dist/index.js",
   "repository": {
