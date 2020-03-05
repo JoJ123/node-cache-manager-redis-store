@@ -10,7 +10,6 @@
     "url": "https://github.com/joj123/node-cache-manager-redis-store.git"
   },
   "scripts": {
-    "prepare": "npm prune",
     "test": "jest --forceExit",
     "test-cov": "jest --forceExit --coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js",
     "build": "rollup -c"
