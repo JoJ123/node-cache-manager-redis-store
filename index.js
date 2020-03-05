@@ -1,7 +1,7 @@
 import Redis from 'redis';
 
 const redisStore = (redisInstance) => {
-  const redisCache = redisInstance;
+  const redisCache = redisInstance || Redis.createClient();
   const storeArgs = redisCache.options;
 
   return {

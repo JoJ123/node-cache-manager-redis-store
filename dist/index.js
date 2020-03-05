@@ -5,7 +5,7 @@ function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'defau
 var Redis = _interopDefault(require('redis'));
 
 var redisStore = function redisStore(redisInstance) {
-  var redisCache = redisInstance;
+  var redisCache = redisInstance || Redis.createClient();
   var storeArgs = redisCache.options;
   return {
     name: 'redis',
